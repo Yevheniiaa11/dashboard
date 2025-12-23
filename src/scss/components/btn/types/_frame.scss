@@ -1,0 +1,22 @@
+@if index($btn-types, frame) {
+  /* ==Frame== */
+
+  .btn--frame {
+    border-color: #f07f2e;
+
+    &:active {
+      border-color: darken(#f07f2e, 10%);
+    }
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus {
+        border-color: lighten(#f07f2e, 10%);
+      }
+    }
+
+    &[disabled] {
+      background-color: #b5b5be;
+    }
+  }
+}
